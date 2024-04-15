@@ -61,7 +61,7 @@ func main() {
 			if err != nil {
 				return err
 			}
-			return os.WriteFile(filepath.Join(args[0], opts.OutputFile), data, 0755)
+			return os.WriteFile(filepath.Join(args[0], opts.OutputFile), data, 0644)
 		},
 	}
 
